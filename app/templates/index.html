@@ -2,10 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Pela Vidda</title>
+    <title>Login - Pela Vidda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
-    <h1>Bem-vindo ao Pela Vidda</h1>
-    <p>Projeto em desenvolvimento 🚧</p>
+    <form method="POST">
+        <h2>Entrar</h2>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+    </form>
 </body>
 </html>
